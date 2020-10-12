@@ -1,0 +1,80 @@
+.drop-container{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 4px dashed var(--lightGreen);
+    cursor: pointer;
+}
+.drop-text{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--lightGreen);
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+} 
+
+.file-status-bar{
+    width: 100%;
+    vertical-align:top;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+}
+
+.file-status-bar > div {
+    overflow: hidden;
+}
+
+.file-type {
+    display: inline-block!important;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    margin-top: 25px;
+    padding: 0 4px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #abc;
+    color: #fff;
+    background: var(--lightGreen);
+    text-transform: uppercase;
+}
+  
+.file-name {
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 54px;
+    /* color: var(--lightGreen); */
+}
+  
+.file-type-logo {
+    width: 5rem;
+    height: 5rem;
+    background: url(/static/generic_file.PNG) no-repeat center center; 
+    background-size: 100%;
+    position: absolute;
+}
+  
+.file-size {
+    display:inline-block;
+    vertical-align:top;
+    margin-left:1rem;
+    margin-right:5px;
+}
+  
+.file-remove  {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    line-height: 15px;
+    cursor: pointer;
+    color: red;
+}
